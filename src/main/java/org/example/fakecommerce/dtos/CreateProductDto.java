@@ -15,7 +15,7 @@ public class CreateProductDto {
 
     private String title;
 
-    private String category;
+    private Long category_id;
 
     private String description;
 
