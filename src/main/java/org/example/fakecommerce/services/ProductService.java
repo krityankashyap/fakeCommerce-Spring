@@ -8,6 +8,7 @@ import org.example.fakecommerce.Repositories.ProductRepository;
 import org.example.fakecommerce.dtos.CreateProductDto;
 import org.example.fakecommerce.schema.Product;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.DeleteMapping;
 
 import java.util.List;
 
@@ -37,5 +38,18 @@ public class ProductService {
                 .build();
 
         return this.productRepository.save(newProd);  // this will save the prod in db
+    }
+
+
+    public void deleteProduct(Long id){
+         this.productRepository.deleteById(id);
+    }
+
+    public List<Product> findProductByCategory(String category){
+        return this.productRepository.findByCategory(category);
+    }
+
+    public List<String> findAllCategories(){
+        return this.productRepository.findAllCategories();
     }
 }
