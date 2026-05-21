@@ -12,17 +12,8 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @NoArgsConstructor
 @SuperBuilder
-public class GetProductResponseDto {
 
-    public Long id;
+public class GetProductWithDetailsResponseDto extends GetProductResponseDto {
 
-    public String title;
-
-    public String description;
-
-    public String image;
-
-    public String ratings;
-
-    public BigDecimal price;
+    public String category;
 }

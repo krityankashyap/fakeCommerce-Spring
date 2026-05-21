@@ -2,6 +2,7 @@ package org.example.fakecommerce.Controllers;
 
 import org.example.fakecommerce.dtos.CreateProductDto;
 import org.example.fakecommerce.dtos.GetProductResponseDto;
+import org.example.fakecommerce.dtos.GetProductWithDetailsResponseDto;
 import org.example.fakecommerce.schema.Product;
 import org.example.fakecommerce.services.ProductService;
 import org.springframework.web.bind.annotation.*;
@@ -42,5 +43,15 @@ public class ProductController {
     @GetMapping("/categories")
     public List<String> getAllCategory(){
         return this.productService.findAllCategories();
+    }
+
+    @GetMapping("/{id}")
+    public GetProductResponseDto getProductById(@PathVariable Long id){
+        return this.productService.getProductById(id);
+    }
+
+    @GetMapping("/{id}/details")
+    public GetProductWithDetailsResponseDto getProductWithDetailsResponseDto(@PathVariable Long id){
+        return this.productService.findProductDetailsById(id);
     }
 }
