@@ -13,6 +13,6 @@ import lombok.NoArgsConstructor;
 @Table(name= "category")
 public class Category extends BaseClass{
 
-    private String name;
+    public String name;
 
 }

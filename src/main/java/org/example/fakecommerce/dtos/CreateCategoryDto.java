@@ -11,5 +11,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class CreateCategoryDto {
 
-    private String name;
+    public String name;
 }
