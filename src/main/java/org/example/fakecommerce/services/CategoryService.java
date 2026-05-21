@@ -3,9 +3,11 @@ package org.example.fakecommerce.services;
 import org.example.fakecommerce.Repositories.CategoryRepository;
 import org.example.fakecommerce.dtos.CreateCategoryDto;
 import org.example.fakecommerce.schema.Category;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class CategoryService {
 
     private final CategoryRepository categoryRepository;
