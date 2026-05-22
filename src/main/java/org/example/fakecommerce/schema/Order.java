@@ -18,11 +18,11 @@ public class Order extends BaseClass{
 
     private OrderStatus orderStatus;
 
-    @ManyToMany
-    @JoinTable(name = "Order-Product" ,
-    joinColumns = @JoinColumn(name = "order_id") ,
-    inverseJoinColumns = @JoinColumn(name = "product_id"))
-    private List<Product> product;
-
+//    @ManyToMany
+//    @JoinTable(name = "Order_Product" ,
+//    joinColumns = @JoinColumn(name = "order_id") ,
+//    inverseJoinColumns = @JoinColumn(name = "product_id"))
+//    private List<Product> product;
+//
 
 }
