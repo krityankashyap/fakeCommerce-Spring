@@ -8,26 +8,29 @@ import lombok.NoArgsConstructor;
 import org.hibernate.annotations.SQLDelete;
 import org.hibernate.annotations.SQLRestriction;
 
+import java.math.BigDecimal;
+
 @Entity
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@SQLDelete(sql= "UPDATE order_product SET deleted_at= CURRENT_TIMESTAMP WHERE id=?")
+@SQLDelete(sql= "UPDATE reviews SET deleted_at= CURRENT_TIMESTAMP WHERE id=?")
 @SQLRestriction("deleted_at IS NULL")
-@Table(name = "order_product")
-public class Order_Products extends BaseClass {
-
-    @Column(nullable = false)
-    private Integer quantity;
+@Table(name = "reviews")
+public class Review extends BaseClass{
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="order_id", nullable = false)
-    private Order order;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name="product_id", nullable = false)
+    @JoinColumn(name = "prod_id")
     private Product product;
 
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name= "order_id")
+    private Order order;
 
+
+    private String comment;
+
+    @Column(nullable = false)
+    private BigDecimal rating;
 }

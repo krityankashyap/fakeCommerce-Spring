@@ -1,0 +1,23 @@
+DROP TABLE IF EXISTS products_seq;
+
+
+ALTER TABLE products
+    MODIFY description VARCHAR(255) NOT NULL;
+
+ALTER TABLE products
+    MODIFY image VARCHAR(255) NOT NULL;
+
+ALTER TABLE category
+    MODIFY name VARCHAR(255) NOT NULL;
+
+ALTER TABLE products
+    MODIFY price DECIMAL NOT NULL;
+
+ALTER TABLE order_product
+    MODIFY quantity INT NOT NULL;
+
+ALTER TABLE products
+    MODIFY ratings VARCHAR(255) NOT NULL;
+
+ALTER TABLE products
+    MODIFY title VARCHAR(255) NOT NULL;

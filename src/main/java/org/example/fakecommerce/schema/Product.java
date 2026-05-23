@@ -9,6 +9,7 @@ import org.hibernate.annotations.SQLDelete;
 import org.hibernate.annotations.SQLRestriction;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -20,17 +21,25 @@ import java.math.BigDecimal;
 @Table(name="products")
 public class Product extends BaseClass{
 
+    @Column(nullable = false)
     private String title;
 
+    @Column(nullable = false)
     private String description;
 
+    @Column(nullable = false)
     private BigDecimal price;
 
+    @Column(nullable = false)
     private String image;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="category_id" , nullable = false)
     private Category category;
 
+    @Column(nullable = false)
     private String ratings;
+
+    @OneToMany(mappedBy = "product")
+    private List<Review> reviews;
 }

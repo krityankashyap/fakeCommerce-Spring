@@ -28,5 +28,6 @@ public class Order extends BaseClass{
 //    inverseJoinColumns = @JoinColumn(name = "product_id"))
 //    private List<Product> product;
 //
-
+    @OneToMany(mappedBy = "order")
+    private List<Review> reviews;
 }
