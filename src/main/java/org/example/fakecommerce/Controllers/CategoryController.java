@@ -3,6 +3,8 @@ package org.example.fakecommerce.Controllers;
 import org.example.fakecommerce.dtos.CreateCategoryDto;
 import org.example.fakecommerce.schema.Category;
 import org.example.fakecommerce.services.CategoryService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,8 +20,8 @@ public class CategoryController {
     }
 
     @PostMapping
-    public Category createCategory(@RequestBody CreateCategoryDto createCategoryDto){
-        return this.categoryService.createCategory(createCategoryDto);
+    public ResponseEntity<Category> createCategory(@RequestBody CreateCategoryDto createCategoryDto){
+        return ResponseEntity.status(HttpStatus.CREATED).body(this.categoryService.createCategory(createCategoryDto));
     }
 
     @GetMapping
