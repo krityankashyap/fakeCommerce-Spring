@@ -21,4 +21,5 @@ public class Category extends BaseClass{
     @Column(nullable = false)
     public String name;
 
+
 }

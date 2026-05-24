@@ -6,6 +6,7 @@ import org.example.fakecommerce.schema.Category;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class CategoryService {
@@ -28,8 +29,8 @@ public class CategoryService {
         return this.categoryRepository.findAll();
     }
 
-    public Category getCategoryById(Long id){
-        return this.categoryRepository.findById(id).orElseThrow(() -> new RuntimeException("Category not found"));
+    public Optional<Category> getCategoryById(Long id){
+        return this.categoryRepository.findById(id);
     }
 
     public void deleteCategory(Long id){

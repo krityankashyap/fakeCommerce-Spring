@@ -5,6 +5,7 @@ import org.example.fakecommerce.Repositories.ProductRepository;
 import org.example.fakecommerce.dtos.CreateProductDto;
 import org.example.fakecommerce.dtos.GetProductResponseDto;
 import org.example.fakecommerce.dtos.GetProductWithDetailsResponseDto;
+import org.example.fakecommerce.exceptions.ResourceNotFoundException;
 import org.example.fakecommerce.schema.Category;
 import org.example.fakecommerce.schema.Product;
 import org.springframework.stereotype.Service;
@@ -12,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -71,7 +73,7 @@ public class ProductService {
 
         Category category= categoryService.getCategoryById(
                 requestdto.getCategory_id()
-        );
+        ).orElseThrow(() -> new ResourceNotFoundException("no resource with id: found"));
 
         Product newProd= Product.builder()
                 .title(requestdto.getTitle())

@@ -1,6 +1,7 @@
 package org.example.fakecommerce.Controllers;
 
 import org.example.fakecommerce.dtos.CreateCategoryDto;
+import org.example.fakecommerce.exceptions.ResourceNotFoundException;
 import org.example.fakecommerce.schema.Category;
 import org.example.fakecommerce.services.CategoryService;
 import org.springframework.http.HttpStatus;
@@ -8,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/v1/categories")
@@ -31,7 +33,9 @@ public class CategoryController {
 
     @GetMapping("/{id}")
     public Category getCategoryById(@PathVariable Long id){
-        return this.categoryService.getCategoryById(id);
+
+        return this.categoryService.getCategoryById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("resource with this id: "+ id + " not found"));
     }
 
     @DeleteMapping("/{id}")
