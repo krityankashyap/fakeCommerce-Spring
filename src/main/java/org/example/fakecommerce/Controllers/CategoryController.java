@@ -4,6 +4,7 @@ import org.example.fakecommerce.dtos.CreateCategoryDto;
 import org.example.fakecommerce.exceptions.ResourceNotFoundException;
 import org.example.fakecommerce.schema.Category;
 import org.example.fakecommerce.services.CategoryService;
+import org.example.fakecommerce.utils.ApiResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -22,8 +23,9 @@ public class CategoryController {
     }
 
     @PostMapping
-    public ResponseEntity<Category> createCategory(@RequestBody CreateCategoryDto createCategoryDto){
-        return ResponseEntity.status(HttpStatus.CREATED).body(this.categoryService.createCategory(createCategoryDto));
+    public ResponseEntity<ApiResponse<Category>> createCategory(@RequestBody CreateCategoryDto createCategoryDto){
+                Category category= this.categoryService.createCategory(createCategoryDto);
+        return ResponseEntity.status(HttpStatus.CREATED).body(ApiResponse.success(category, "Category created successfully"));
     }
 
     @GetMapping

@@ -1,5 +1,6 @@
 package org.example.fakecommerce.exceptions;
 
+import org.example.fakecommerce.utils.ApiResponse;
 import org.springframework.boot.context.config.ConfigDataResourceNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,12 +12,12 @@ import org.springframework.web.client.ResourceAccessException;
 public class GlobalExceptionalHandler {
 
     @ExceptionHandler(ResourceNotFoundException.class)
-    public ResponseEntity<String> resourceNotFound(ResourceNotFoundException ex){
-        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex.getMessage());
+    public ResponseEntity<ApiResponse<String>> resourceNotFound(ResourceNotFoundException ex) {
+      return  ResponseEntity.status(HttpStatus.NOT_FOUND).body(ApiResponse.error(ex.getMessage(), "Resource not found.."));
     }
 
     @ExceptionHandler(Exception.class)
-    public ResponseEntity<String> handleAllGeneralException(Exception ex){
-        return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Something went wrong");
+    public ResponseEntity<ApiResponse<String>> handleAllGeneralException(Exception ex){
+      return   ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(ApiResponse.error(ex.getMessage(), "Something went wrong.."));
     }
 }
