@@ -29,20 +29,25 @@ public class CategoryController {
     }
 
     @GetMapping
-    public List<Category> getAllCategory(){
-        return this.categoryService.getAllCategory();
+    public ResponseEntity<ApiResponse<List<Category>>> getAllCategory(){
+
+        List<Category> categories=  this.categoryService.getAllCategory();
+        return ResponseEntity.status(HttpStatus.OK).body(ApiResponse.success(categories, "Fetched all categories"));
     }
 
     @GetMapping("/{id}")
-    public Category getCategoryById(@PathVariable Long id){
+    public ResponseEntity<ApiResponse<Category>> getCategoryById(@PathVariable Long id){
 
-        return this.categoryService.getCategoryById(id)
+        Category category=  this.categoryService.getCategoryById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("resource with this id: "+ id + " not found"));
+
+        return ResponseEntity.status(HttpStatus.OK).body(ApiResponse.success(category, "Category with given if fetched"));
     }
 
     @DeleteMapping("/{id}")
-    public void deleteCategoryById(@PathVariable Long id){
-         this.categoryService.deleteCategory(id);
+    public ResponseEntity<ApiResponse<String>> deleteCategoryById(@PathVariable Long id){
+          this.categoryService.deleteCategory(id);
+         return ResponseEntity.status(HttpStatus.OK).body(ApiResponse.success(null, "Category deleted successfully"));
     }
 
 

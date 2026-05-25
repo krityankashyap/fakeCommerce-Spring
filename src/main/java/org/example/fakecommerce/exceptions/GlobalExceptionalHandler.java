@@ -20,4 +20,10 @@ public class GlobalExceptionalHandler {
     public ResponseEntity<ApiResponse<String>> handleAllGeneralException(Exception ex){
       return   ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(ApiResponse.error(ex.getMessage(), "Something went wrong.."));
     }
+
+    @ExceptionHandler(ResourceDeletionException.class)
+    public ResponseEntity<ApiResponse<String>> handleResourceDeletion(Exception ex){
+        return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ApiResponse.error(ex.getMessage(), "Response isn't deleted"));
+    }
+
 }
