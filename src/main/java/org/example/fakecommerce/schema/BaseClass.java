@@ -25,7 +25,7 @@ public class BaseClass {
     @Column(name="updated_at")
     private LocalDateTime updatedAt;
 
-    @LastModifiedDate
+
     @Column(name = "deleted_at")
     private LocalDateTime deletedSt;
 }
