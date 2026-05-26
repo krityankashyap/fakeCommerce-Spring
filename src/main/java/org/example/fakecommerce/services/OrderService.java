@@ -6,10 +6,12 @@ import org.example.fakecommerce.Repositories.OrderProductRepository;
 import org.example.fakecommerce.Repositories.OrderRepository;
 import org.example.fakecommerce.Repositories.ProductRepository;
 import org.example.fakecommerce.dtos.GetOrderResponseDto;
+import org.example.fakecommerce.exceptions.ResourceNotFoundException;
 import org.example.fakecommerce.schema.Order;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -33,6 +35,20 @@ public class OrderService {
         return orders.stream()
                 .map(order -> orderAdapter.mapToGetOrderResponseDto(order))
                 .collect(Collectors.toList());
+    }
+
+    public GetOrderResponseDto getOrderById(Long id){
+        Order order= orderRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Resource with corresponding id is not found"));
+
+        return orderAdapter.mapToGetOrderResponseDto(order);
+    }
+
+    public void  deleteOrderById(Long id){
+        Order order = orderRepository.findById(id)
+                .orElseThrow(() -> new ResourceNotFoundException("Resource not found"));
+
+        orderRepository.delete(order);
     }
 
 
