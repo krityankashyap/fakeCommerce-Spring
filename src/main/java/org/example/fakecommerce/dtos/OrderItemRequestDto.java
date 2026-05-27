@@ -17,12 +17,5 @@ public class OrderItemRequestDto {
 
     private Integer quantity;
 
-    private BigDecimal prodPrice;
-
-    private BigDecimal subTotal;
-
-    private String prodImage;
-
-    private String prodName;
 
 }
