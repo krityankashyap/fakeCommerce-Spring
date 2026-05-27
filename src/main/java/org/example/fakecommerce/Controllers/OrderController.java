@@ -41,28 +41,9 @@ public class OrderController {
     }
 
     @PostMapping
-    public Void createOrder(@RequestBody CreateOrderRequestDto createOrderRequestDto){
-        Order order= Order.builder()  // build a order
-                .orderStatus(OrderStatus.PENDING)
-                .build();
-
-        orderRepository.save(order);
-        if(createOrderRequestDto.getOrderItems() != null){ // search product by productId
-            for(var itemdto: createOrderRequestDto.getOrderItems()){
-                Product product= productRepository.findById(itemdto.getProductId())
-                        .orElseThrow(() -> new ResourceNotFoundException("Item not found with id: "+ itemdto.getProductId()));
-
-                Order_Products orderProducts= Order_Products.builder()  // create a order_product
-                        .order(order)
-                        .product(product)
-                        .quantity(itemdto.getQuantity() != null ? itemdto.getQuantity() : 1)
-                        .build();
-
-                orderProductRepository.save(orderProducts);   // save the order_product
-            }
-        }
-
+    public GetOrderResponseDto createOrder(@RequestBody CreateOrderRequestDto createOrderRequestDto) {
     }
+
 
     @DeleteMapping("/{id}")
     public void deleteOrder(@PathVariable Long id){
