@@ -1,5 +1,6 @@
 package org.example.fakecommerce;
 
+import io.github.cdimascio.dotenv.Dotenv;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
@@ -8,10 +9,11 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 @EnableJpaAuditing  // It enables jpa auditing
 public class FakeCommerceApplication {
 
-//    Dotenv dotenv = Dotenv.load();
-//        System.setProperty("PORT", dotenv.get("PORT"));
-
     public static void main(String[] args) {
+
+        Dotenv dotenv = Dotenv.load();
+        System.setProperty("New_Relic_License_Key", dotenv.get("New_Relic_License_Key"));
+
         SpringApplication.run(FakeCommerceApplication.class, args);
     }
 

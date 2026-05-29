@@ -125,3 +125,123 @@
 2026-05-29T12:08:51,237+0530 [71147 41] com.newrelic INFO: Real user monitoring is enabled for application FakeCommerceSpringBoot. Auto instrumentation is enabled.
 2026-05-29T12:08:51,238+0530 [71147 41] com.newrelic INFO: Updating shared Adaptive Sampler sampling target to 120
 2026-05-29T12:08:51,239+0530 [71147 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T12:22:22,546+0530 [71147 69] com.newrelic INFO: Re-reading New Relic configuration file
+2026-05-29T12:22:22,585+0530 [71147 69] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2026-05-29T12:22:22,585+0530 [71147 69] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2026-05-29T12:22:22,585+0530 [71147 69] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2026-05-29T12:22:22,596+0530 [71147 69] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2026-05-29T12:22:22,596+0530 [71147 69] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2026-05-29T12:22:22,596+0530 [71147 69] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2026-05-29T12:22:22,602+0530 [71147 69] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2026-05-29T12:22:22,603+0530 [71147 69] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2026-05-29T12:22:22,603+0530 [71147 69] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2026-05-29T12:22:22,604+0530 [71147 69] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2026-05-29T12:22:22,604+0530 [71147 69] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2026-05-29T12:22:22,604+0530 [71147 69] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2026-05-29T12:23:22,725+0530 [71147 69] com.newrelic INFO: Re-reading New Relic configuration file
+2026-05-29T12:23:22,738+0530 [71147 69] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2026-05-29T12:23:22,738+0530 [71147 69] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2026-05-29T12:23:22,738+0530 [71147 69] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2026-05-29T12:23:22,745+0530 [71147 69] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2026-05-29T12:23:22,746+0530 [71147 69] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2026-05-29T12:23:22,746+0530 [71147 69] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2026-05-29T12:23:22,756+0530 [71147 69] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2026-05-29T12:23:22,756+0530 [71147 69] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2026-05-29T12:23:22,756+0530 [71147 69] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2026-05-29T12:23:22,765+0530 [71147 69] com.newrelic INFO: Using default collector host: collector.newrelic.com
+2026-05-29T12:23:22,765+0530 [71147 69] com.newrelic INFO: Using default metric ingest URI: https://metric-api.newrelic.com/metric/v1
+2026-05-29T12:23:22,765+0530 [71147 69] com.newrelic INFO: Using default event ingest URI: https://insights-collector.newrelic.com/v1/accounts/events
+2026-05-29T12:29:47,830+0530 [71888 1] com.newrelic INFO: Writing to New Relic log file: /Users/krityankashyap/Documents/Dev-section/FakeCommerce/newrelic/logs/newrelic_agent.log
+2026-05-29T12:29:47,830+0530 [71888 1] com.newrelic INFO: JRE vendor Homebrew version 17.0.17
+2026-05-29T12:29:47,830+0530 [71888 1] com.newrelic INFO: JVM vendor Homebrew OpenJDK 64-Bit Server VM version 17.0.17+0
+2026-05-29T12:29:47,830+0530 [71888 1] com.newrelic INFO: OS Mac OS X version 26.3.1 arch aarch64
+2026-05-29T12:29:47,830+0530 [71888 1] com.newrelic INFO: Agent Host: Krityans-MacBook-Air.local IP: 127.0.0.1
+2026-05-29T12:29:47,830+0530 [71888 1] com.newrelic INFO: New Relic Agent v9.2.0 is initializing...
+2026-05-29T12:29:47,837+0530 [71888 1] com.newrelic INFO: AgentCollectionFactory: Using Caffeine 3.x for Java 17
+2026-05-29T12:29:48,110+0530 [71888 18] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2026-05-29T12:29:49,091+0530 [71888 1] com.newrelic INFO: Started Adaptive Sampler with sampling target 120 and report period 60 seconds.
+2026-05-29T12:29:49,092+0530 [71888 1] com.newrelic INFO: The full granularity root sampler was configured to use the adaptive sampler type.
+2026-05-29T12:29:49,092+0530 [71888 1] com.newrelic INFO: The full granularity remote_parent_sampled sampler was configured to use the adaptive sampler type.
+2026-05-29T12:29:49,092+0530 [71888 1] com.newrelic INFO: The full granularity remote_parent_not_sampled sampler was configured to use the adaptive sampler type.
+2026-05-29T12:29:49,093+0530 [71888 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2026-05-29T12:29:49,199+0530 [71888 1] com.newrelic INFO: Setting audit_mode to false
+2026-05-29T12:29:49,253+0530 [71888 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /Users/krityankashyap/Documents/Dev-section/FakeCommerce/newrelic/./newrelic.yml
+2026-05-29T12:29:49,255+0530 [71888 1] com.newrelic INFO: New Relic Agent v9.2.0 has started
+2026-05-29T12:29:49,255+0530 [71888 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@1e81f4dc
+2026-05-29T12:29:49,255+0530 [71888 1] com.newrelic INFO: Premain startup complete in 1,819ms
+2026-05-29T12:29:49,255+0530 [71888 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2026-05-29T12:29:50,622+0530 [71888 45] com.newrelic INFO: Server Info: Apache Tomcat/11.0.21
+2026-05-29T12:29:53,646+0530 [71888 16] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2026-05-29T12:37:35,038+0530 [72029 1] com.newrelic INFO: Writing to New Relic log file: /Users/krityankashyap/Documents/Dev-section/FakeCommerce/newrelic/logs/newrelic_agent.log
+2026-05-29T12:37:35,039+0530 [72029 1] com.newrelic INFO: JRE vendor Homebrew version 17.0.17
+2026-05-29T12:37:35,039+0530 [72029 1] com.newrelic INFO: JVM vendor Homebrew OpenJDK 64-Bit Server VM version 17.0.17+0
+2026-05-29T12:37:35,039+0530 [72029 1] com.newrelic INFO: OS Mac OS X version 26.3.1 arch aarch64
+2026-05-29T12:37:35,039+0530 [72029 1] com.newrelic INFO: Agent Host: Krityans-MacBook-Air.local IP: 127.0.0.1
+2026-05-29T12:37:35,039+0530 [72029 1] com.newrelic INFO: New Relic Agent v9.2.0 is initializing...
+2026-05-29T12:37:35,046+0530 [72029 1] com.newrelic INFO: AgentCollectionFactory: Using Caffeine 3.x for Java 17
+2026-05-29T12:37:35,406+0530 [72029 18] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2026-05-29T12:37:36,340+0530 [72029 1] com.newrelic INFO: Started Adaptive Sampler with sampling target 120 and report period 60 seconds.
+2026-05-29T12:37:36,340+0530 [72029 1] com.newrelic INFO: The full granularity root sampler was configured to use the adaptive sampler type.
+2026-05-29T12:37:36,340+0530 [72029 1] com.newrelic INFO: The full granularity remote_parent_sampled sampler was configured to use the adaptive sampler type.
+2026-05-29T12:37:36,340+0530 [72029 1] com.newrelic INFO: The full granularity remote_parent_not_sampled sampler was configured to use the adaptive sampler type.
+2026-05-29T12:37:36,344+0530 [72029 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.newrelic.com:443
+2026-05-29T12:37:36,477+0530 [72029 1] com.newrelic INFO: Setting audit_mode to false
+2026-05-29T12:37:36,562+0530 [72029 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /Users/krityankashyap/Documents/Dev-section/FakeCommerce/newrelic/./newrelic.yml
+2026-05-29T12:37:36,564+0530 [72029 1] com.newrelic INFO: New Relic Agent v9.2.0 has started
+2026-05-29T12:37:36,564+0530 [72029 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@1e81f4dc
+2026-05-29T12:37:36,565+0530 [72029 1] com.newrelic INFO: Premain startup complete in 2,191ms
+2026-05-29T12:37:36,565+0530 [72029 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2026-05-29T12:37:38,187+0530 [72029 45] com.newrelic INFO: Server Info: Apache Tomcat/11.0.21
+2026-05-29T12:37:46,588+0530 [72029 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T12:37:46,592+0530 [72029 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T12:37:46,595+0530 [72029 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.newrelic.com:443 for FakeCommerceSpringBoot: java.lang.IllegalArgumentException: can't parse argument number: New_Relic_License_Key
+2026-05-29T12:38:01,625+0530 [72029 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T12:38:01,633+0530 [72029 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T12:38:01,856+0530 [72029 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.newrelic.com:443 for FakeCommerceSpringBoot: java.lang.IllegalArgumentException: can't parse argument number: New_Relic_License_Key
+2026-05-29T12:38:16,873+0530 [72029 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T12:38:16,881+0530 [72029 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T12:38:17,100+0530 [72029 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.newrelic.com:443 for FakeCommerceSpringBoot: java.lang.IllegalArgumentException: can't parse argument number: New_Relic_License_Key
+2026-05-29T12:38:47,131+0530 [72029 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T12:38:47,134+0530 [72029 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T12:38:47,353+0530 [72029 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.newrelic.com:443 for FakeCommerceSpringBoot: java.lang.IllegalArgumentException: can't parse argument number: New_Relic_License_Key
+2026-05-29T12:39:47,407+0530 [72029 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T12:39:47,409+0530 [72029 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T12:39:47,623+0530 [72029 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.newrelic.com:443 for FakeCommerceSpringBoot: java.lang.IllegalArgumentException: can't parse argument number: New_Relic_License_Key
+2026-05-29T12:41:47,730+0530 [72029 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T12:41:47,743+0530 [72029 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T12:41:47,806+0530 [72029 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.newrelic.com:443 for FakeCommerceSpringBoot: java.lang.IllegalArgumentException: can't parse argument number: New_Relic_License_Key
+2026-05-29T12:46:48,029+0530 [72029 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T12:46:48,041+0530 [72029 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T12:46:48,277+0530 [72029 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.newrelic.com:443 for FakeCommerceSpringBoot: java.lang.IllegalArgumentException: can't parse argument number: New_Relic_License_Key
+2026-05-29T13:19:47,600+0530 [72029 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T13:19:47,637+0530 [72029 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T13:19:47,959+0530 [72029 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.newrelic.com:443 for FakeCommerceSpringBoot: java.lang.IllegalArgumentException: can't parse argument number: New_Relic_License_Key
+2026-05-29T13:35:08,438+0530 [72029 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T13:35:08,454+0530 [72029 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T13:51:32,054+0530 [72029 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.newrelic.com:443 for FakeCommerceSpringBoot: java.lang.IllegalArgumentException: can't parse argument number: New_Relic_License_Key
+2026-05-29T14:08:27,465+0530 [72029 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T14:08:27,470+0530 [72029 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T14:08:27,689+0530 [72029 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.newrelic.com:443 for FakeCommerceSpringBoot: java.lang.IllegalArgumentException: can't parse argument number: New_Relic_License_Key
+2026-05-29T14:17:43,327+0530 [72029 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T14:17:43,335+0530 [72029 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T14:17:45,357+0530 [72029 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.newrelic.com:443 for FakeCommerceSpringBoot: java.lang.IllegalArgumentException: can't parse argument number: New_Relic_License_Key
+2026-05-29T14:22:45,603+0530 [72029 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T14:22:45,611+0530 [72029 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T14:22:45,616+0530 [72029 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.newrelic.com:443 for FakeCommerceSpringBoot: java.lang.IllegalArgumentException: can't parse argument number: New_Relic_License_Key
+2026-05-29T14:27:45,861+0530 [72029 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T14:27:45,865+0530 [72029 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T14:27:46,087+0530 [72029 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.newrelic.com:443 for FakeCommerceSpringBoot: java.lang.IllegalArgumentException: can't parse argument number: New_Relic_License_Key
+2026-05-29T14:32:46,360+0530 [72029 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T14:32:46,366+0530 [72029 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T14:32:46,603+0530 [72029 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.newrelic.com:443 for FakeCommerceSpringBoot: java.lang.IllegalArgumentException: can't parse argument number: New_Relic_License_Key
+2026-05-29T14:37:47,011+0530 [72029 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T14:37:47,018+0530 [72029 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T14:37:47,146+0530 [72029 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.newrelic.com:443 for FakeCommerceSpringBoot: java.lang.IllegalArgumentException: can't parse argument number: New_Relic_License_Key
+2026-05-29T14:42:47,580+0530 [72029 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T14:42:47,586+0530 [72029 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T14:42:47,817+0530 [72029 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.newrelic.com:443 for FakeCommerceSpringBoot: java.lang.IllegalArgumentException: can't parse argument number: New_Relic_License_Key
+2026-05-29T14:47:48,109+0530 [72029 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T14:47:48,115+0530 [72029 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T14:47:48,335+0530 [72029 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.newrelic.com:443 for FakeCommerceSpringBoot: java.lang.IllegalArgumentException: can't parse argument number: New_Relic_License_Key
+2026-05-29T14:49:43,418+0530 [72029 16] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2026-05-29T14:49:43,443+0530 [72029 16] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
