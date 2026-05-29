@@ -19,7 +19,7 @@ public class GetOrderResponseDto {
 
     private OrderStatus status;
 
-    private List<OrderItemRequestDto> orderItems;
+    private List<OrderItemsResponseDto> orderItems;
 
     private LocalDateTime createdAt;
 

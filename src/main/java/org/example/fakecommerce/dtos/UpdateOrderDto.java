@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.example.fakecommerce.schema.OrderStatus;
 
 import java.util.List;
 
@@ -13,7 +14,7 @@ import java.util.List;
 @Builder
 public class UpdateOrderDto {
 
-    private String status;
+    private OrderStatus status;
 
     private List<OrderRequestActionsDto> oderitems;
 }

@@ -8,7 +8,7 @@ import java.util.List;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@RequiredArgsConstructor
+
 public class CreateOrderRequestDto {
 
     private List<OrderItemRequestDto> orderItems;

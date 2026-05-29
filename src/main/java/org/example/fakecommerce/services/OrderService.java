@@ -99,7 +99,7 @@ public class OrderService {
 
 
         if(updateOrderRequestDto.getStatus() != null) {
-            order.setOrderStatus(updateOrderRequestDto.getStatus());
+            order.setOrderStatus(OrderStatus.valueOf(String.valueOf(updateOrderRequestDto.getStatus())));
             orderRepository.save(order);
         }
 

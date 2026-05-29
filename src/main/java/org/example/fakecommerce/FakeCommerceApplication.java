@@ -8,6 +8,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 @EnableJpaAuditing  // It enables jpa auditing
 public class FakeCommerceApplication {
 
+//    Dotenv dotenv = Dotenv.load();
+//        System.setProperty("PORT", dotenv.get("PORT"));
+
     public static void main(String[] args) {
         SpringApplication.run(FakeCommerceApplication.class, args);
     }

@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import org.example.fakecommerce.Repositories.OrderProductRepository;
 import org.example.fakecommerce.dtos.GetOrderResponseDto;
 import org.example.fakecommerce.dtos.OrderItemRequestDto;
+import org.example.fakecommerce.dtos.OrderItemsResponseDto;
 import org.example.fakecommerce.schema.Order;
 import org.example.fakecommerce.schema.Order_Products;
 import org.springframework.stereotype.Component;
@@ -22,6 +23,12 @@ public class OrderAdapter {
 
     private final OrderProductRepository orderProductRepository;
 
+    public List<GetOrderResponseDto> mapToGetOrderResponseDtoList(List<Order> orders) {
+        return orders.stream()
+                .map(this::mapToGetOrderResponseDto)
+                .collect(Collectors.toList());
+    }
+
     public OrderAdapter(OrderProductRepository orderProductRepository){
         this.orderProductRepository= orderProductRepository;
     }
@@ -30,22 +37,24 @@ public class OrderAdapter {
 
         List<Order_Products> orderProducts= orderProductRepository.findByOrderId(order.getId());
 
+        List<OrderItemsResponseDto> items = mapToOrderItemResponseDto(orderProducts);
+
         return GetOrderResponseDto.builder()
                 .id(order.getId())
                 .status(order.getOrderStatus())
                 .createdAt(order.getCreatedAt())
                 .updatedAt(order.getUpdatedAt())
-                .orderItems(mapToOrderItemResponseDto(orderProducts))
+                .orderItems(items)
                 .build();
     }
 
-    public List<OrderItemRequestDto> mapToOrderItemResponseDto(List<Order_Products> orderProducts){
+    public List<OrderItemsResponseDto> mapToOrderItemResponseDto(List<Order_Products> orderProducts){
         return orderProducts.stream()
-                .map(op -> OrderItemRequestDto.builder()
+                .map(op -> OrderItemsResponseDto.builder()
                         .productId(op.getProduct().getId())
-                        .prodName(op.getProduct().getTitle())
-                        .prodImage(op.getProduct().getImage())
-                        .prodPrice(op.getProduct().getPrice())
+                        .productName(op.getProduct().getTitle())
+                        .productImage(op.getProduct().getImage())
+                        .productPrice(op.getProduct().getPrice())
                         .quantity(op.getQuantity())
                         .subTotal(op.getProduct().getPrice().multiply(BigDecimal.valueOf(op.getQuantity())))
                         .build())

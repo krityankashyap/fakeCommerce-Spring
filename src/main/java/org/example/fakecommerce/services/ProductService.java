@@ -93,7 +93,7 @@ public class ProductService {
     }
 
     public List<Product> findProductByCategory(String category){
-        return this.productRepository.findByCategory(category);
+        return this.productRepository.findByCategory_Name(category);
     }
 
     public List<String> findAllCategories(){

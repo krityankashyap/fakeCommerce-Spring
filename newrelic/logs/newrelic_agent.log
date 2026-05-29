@@ -1,0 +1,127 @@
+2026-05-29T11:41:26,998+0530 [70564 1] com.newrelic INFO: Writing to New Relic log file: /Users/krityankashyap/Documents/Dev-section/FakeCommerce/newrelic/logs/newrelic_agent.log
+2026-05-29T11:41:26,999+0530 [70564 1] com.newrelic INFO: JRE vendor Homebrew version 17.0.17
+2026-05-29T11:41:26,999+0530 [70564 1] com.newrelic INFO: JVM vendor Homebrew OpenJDK 64-Bit Server VM version 17.0.17+0
+2026-05-29T11:41:26,999+0530 [70564 1] com.newrelic INFO: OS Mac OS X version 26.3.1 arch aarch64
+2026-05-29T11:41:26,999+0530 [70564 1] com.newrelic INFO: Agent Host: Krityans-MacBook-Air.local IP: 127.0.0.1
+2026-05-29T11:41:26,999+0530 [70564 1] com.newrelic INFO: New Relic Agent v9.2.0 is initializing...
+2026-05-29T11:41:27,006+0530 [70564 1] com.newrelic INFO: AgentCollectionFactory: Using Caffeine 3.x for Java 17
+2026-05-29T11:41:27,283+0530 [70564 18] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2026-05-29T11:41:28,283+0530 [70564 1] com.newrelic INFO: Started Adaptive Sampler with sampling target 120 and report period 60 seconds.
+2026-05-29T11:41:28,283+0530 [70564 1] com.newrelic INFO: The full granularity root sampler was configured to use the adaptive sampler type.
+2026-05-29T11:41:28,283+0530 [70564 1] com.newrelic INFO: The full granularity remote_parent_sampled sampler was configured to use the adaptive sampler type.
+2026-05-29T11:41:28,283+0530 [70564 1] com.newrelic INFO: The full granularity remote_parent_not_sampled sampler was configured to use the adaptive sampler type.
+2026-05-29T11:41:28,284+0530 [70564 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.nrak-tg0dscvm5e4l3.nr-data.net:443
+2026-05-29T11:41:28,422+0530 [70564 1] com.newrelic INFO: Setting audit_mode to false
+2026-05-29T11:41:28,476+0530 [70564 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /Users/krityankashyap/Documents/Dev-section/FakeCommerce/newrelic/./newrelic.yml
+2026-05-29T11:41:28,478+0530 [70564 1] com.newrelic INFO: New Relic Agent v9.2.0 has started
+2026-05-29T11:41:28,478+0530 [70564 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@65ae6ba4
+2026-05-29T11:41:28,478+0530 [70564 1] com.newrelic INFO: Premain startup complete in 1,953ms
+2026-05-29T11:41:28,478+0530 [70564 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2026-05-29T11:41:29,861+0530 [70564 45] com.newrelic INFO: Server Info: Apache Tomcat/11.0.21
+2026-05-29T11:41:33,496+0530 [70564 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T11:41:33,498+0530 [70564 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T11:41:33,813+0530 [70564 41] com.newrelic ERROR: Remote preconnect call failed : java.net.UnknownHostException: collector.nrak-tg0dscvm5e4l3.nr-data.net: nodename nor servname provided, or not known.
+2026-05-29T11:41:33,814+0530 [70564 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.nrak-tg0dscvm5e4l3.nr-data.net:443 for FakeCommerceSpringBoot: java.net.UnknownHostException: collector.nrak-tg0dscvm5e4l3.nr-data.net: nodename nor servname provided, or not known
+2026-05-29T11:41:48,854+0530 [70564 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T11:41:48,872+0530 [70564 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T11:41:49,126+0530 [70564 41] com.newrelic ERROR: Remote preconnect call failed : java.net.UnknownHostException: collector.nrak-tg0dscvm5e4l3.nr-data.net: nodename nor servname provided, or not known.
+2026-05-29T11:41:49,126+0530 [70564 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.nrak-tg0dscvm5e4l3.nr-data.net:443 for FakeCommerceSpringBoot: java.net.UnknownHostException: collector.nrak-tg0dscvm5e4l3.nr-data.net: nodename nor servname provided, or not known
+2026-05-29T11:42:04,214+0530 [70564 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T11:42:04,270+0530 [70564 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T11:42:04,556+0530 [70564 41] com.newrelic ERROR: Remote preconnect call failed : java.net.UnknownHostException: collector.nrak-tg0dscvm5e4l3.nr-data.net: nodename nor servname provided, or not known.
+2026-05-29T11:42:04,556+0530 [70564 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.nrak-tg0dscvm5e4l3.nr-data.net:443 for FakeCommerceSpringBoot: java.net.UnknownHostException: collector.nrak-tg0dscvm5e4l3.nr-data.net: nodename nor servname provided, or not known
+2026-05-29T11:42:34,602+0530 [70564 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T11:42:34,605+0530 [70564 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T11:42:34,830+0530 [70564 41] com.newrelic ERROR: Remote preconnect call failed : java.net.UnknownHostException: collector.nrak-tg0dscvm5e4l3.nr-data.net: nodename nor servname provided, or not known.
+2026-05-29T11:42:34,830+0530 [70564 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.nrak-tg0dscvm5e4l3.nr-data.net:443 for FakeCommerceSpringBoot: java.net.UnknownHostException: collector.nrak-tg0dscvm5e4l3.nr-data.net: nodename nor servname provided, or not known
+2026-05-29T11:43:34,936+0530 [70564 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T11:43:34,947+0530 [70564 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T11:43:35,187+0530 [70564 41] com.newrelic ERROR: Remote preconnect call failed : java.net.UnknownHostException: collector.nrak-tg0dscvm5e4l3.nr-data.net: nodename nor servname provided, or not known.
+2026-05-29T11:43:35,188+0530 [70564 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.nrak-tg0dscvm5e4l3.nr-data.net:443 for FakeCommerceSpringBoot: java.net.UnknownHostException: collector.nrak-tg0dscvm5e4l3.nr-data.net: nodename nor servname provided, or not known
+2026-05-29T11:45:35,280+0530 [70564 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T11:45:35,289+0530 [70564 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T11:45:35,357+0530 [70564 41] com.newrelic ERROR: Remote preconnect call failed : java.net.UnknownHostException: collector.nrak-tg0dscvm5e4l3.nr-data.net: nodename nor servname provided, or not known.
+2026-05-29T11:45:35,357+0530 [70564 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.nrak-tg0dscvm5e4l3.nr-data.net:443 for FakeCommerceSpringBoot: java.net.UnknownHostException: collector.nrak-tg0dscvm5e4l3.nr-data.net: nodename nor servname provided, or not known
+2026-05-29T11:50:35,602+0530 [70564 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T11:50:35,635+0530 [70564 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T11:50:35,925+0530 [70564 41] com.newrelic ERROR: Remote preconnect call failed : java.net.UnknownHostException: collector.nrak-tg0dscvm5e4l3.nr-data.net: nodename nor servname provided, or not known.
+2026-05-29T11:50:35,925+0530 [70564 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.nrak-tg0dscvm5e4l3.nr-data.net:443 for FakeCommerceSpringBoot: java.net.UnknownHostException: collector.nrak-tg0dscvm5e4l3.nr-data.net: nodename nor servname provided, or not known
+2026-05-29T11:55:36,193+0530 [70564 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T11:55:36,215+0530 [70564 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T11:55:36,483+0530 [70564 41] com.newrelic ERROR: Remote preconnect call failed : java.net.UnknownHostException: collector.nrak-tg0dscvm5e4l3.nr-data.net: nodename nor servname provided, or not known.
+2026-05-29T11:55:36,483+0530 [70564 41] com.newrelic.agent.rpm.RPMConnectionServiceImpl INFO: Failed to connect to collector.nrak-tg0dscvm5e4l3.nr-data.net:443 for FakeCommerceSpringBoot: java.net.UnknownHostException: collector.nrak-tg0dscvm5e4l3.nr-data.net: nodename nor servname provided, or not known
+2026-05-29T11:57:59,301+0530 [70564 16] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2026-05-29T11:57:59,340+0530 [70564 16] com.newrelic.agent.core.CoreServiceImpl INFO: New Relic Agent has shutdown
+2026-05-29T11:58:07,563+0530 [70958 1] com.newrelic INFO: Writing to New Relic log file: /Users/krityankashyap/Documents/Dev-section/FakeCommerce/newrelic/logs/newrelic_agent.log
+2026-05-29T11:58:07,564+0530 [70958 1] com.newrelic INFO: JRE vendor Homebrew version 17.0.17
+2026-05-29T11:58:07,564+0530 [70958 1] com.newrelic INFO: JVM vendor Homebrew OpenJDK 64-Bit Server VM version 17.0.17+0
+2026-05-29T11:58:07,564+0530 [70958 1] com.newrelic INFO: OS Mac OS X version 26.3.1 arch aarch64
+2026-05-29T11:58:07,564+0530 [70958 1] com.newrelic INFO: Agent Host: Krityans-MacBook-Air.local IP: 127.0.0.1
+2026-05-29T11:58:07,564+0530 [70958 1] com.newrelic INFO: New Relic Agent v9.2.0 is initializing...
+2026-05-29T11:58:07,570+0530 [70958 1] com.newrelic INFO: AgentCollectionFactory: Using Caffeine 3.x for Java 17
+2026-05-29T11:58:07,827+0530 [70958 18] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2026-05-29T11:58:08,560+0530 [70958 1] com.newrelic INFO: Started Adaptive Sampler with sampling target 120 and report period 60 seconds.
+2026-05-29T11:58:08,561+0530 [70958 1] com.newrelic INFO: The full granularity root sampler was configured to use the adaptive sampler type.
+2026-05-29T11:58:08,561+0530 [70958 1] com.newrelic INFO: The full granularity remote_parent_sampled sampler was configured to use the adaptive sampler type.
+2026-05-29T11:58:08,561+0530 [70958 1] com.newrelic INFO: The full granularity remote_parent_not_sampled sampler was configured to use the adaptive sampler type.
+2026-05-29T11:58:08,562+0530 [70958 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.eu01.nr-data.net:443
+2026-05-29T11:58:08,676+0530 [70958 1] com.newrelic INFO: Setting audit_mode to false
+2026-05-29T11:58:08,731+0530 [70958 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /Users/krityankashyap/Documents/Dev-section/FakeCommerce/newrelic/./newrelic.yml
+2026-05-29T11:58:08,733+0530 [70958 1] com.newrelic INFO: New Relic Agent v9.2.0 has started
+2026-05-29T11:58:08,733+0530 [70958 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@65ae6ba4
+2026-05-29T11:58:08,733+0530 [70958 1] com.newrelic INFO: Premain startup complete in 1,570ms
+2026-05-29T11:58:08,734+0530 [70958 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2026-05-29T11:58:10,190+0530 [70958 45] com.newrelic INFO: Server Info: Apache Tomcat/11.0.21
+2026-05-29T11:58:13,754+0530 [70958 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T11:58:13,756+0530 [70958 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T11:58:16,588+0530 [70958 41] com.newrelic INFO: Collector redirection to collector.eu01.nr-data.net:443
+2026-05-29T11:58:18,219+0530 [70958 41] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2026-05-29T11:58:18,219+0530 [70958 41] com.newrelic INFO: Agent run id: BTXp_8PmSsreAHvGLR-fq-JqGTJoAAIBAAAnIQEAARUuAgQfn6m6AwAFOS4yLjAAGktyaXR5YW5zLU1hY0Jvb2stQWlyLmxvY2FsABZGYWtlQ29tbWVyY2VTcHJpbmdCb290
+2026-05-29T11:58:18,221+0530 [70958 41] com.newrelic INFO: Agent 70958@Krityans-MacBook-Air.local/FakeCommerceSpringBoot connected to collector.eu01.nr-data.net:443
+2026-05-29T11:58:18,225+0530 [70958 41] com.newrelic INFO: Reporting to: https://one.eu.newrelic.com/redirect/entity/ODExMTY2MXxBUE18QVBQTElDQVRJT058NTMwNTU3Mzcw
+2026-05-29T11:58:18,231+0530 [70958 41] com.newrelic INFO: Using region aware collector host: collector.eu01.nr-data.net
+2026-05-29T11:58:18,231+0530 [70958 41] com.newrelic INFO: Using region aware metric ingest URI: https://metric-api.eu01.nr-data.net/metric/v1
+2026-05-29T11:58:18,231+0530 [70958 41] com.newrelic INFO: Using region aware event ingest URI: https://insights-collector.eu01.nr-data.net/v1/accounts/events
+2026-05-29T11:58:18,234+0530 [70958 41] com.newrelic INFO: Using region aware collector host: collector.eu01.nr-data.net
+2026-05-29T11:58:18,234+0530 [70958 41] com.newrelic INFO: Using region aware metric ingest URI: https://metric-api.eu01.nr-data.net/metric/v1
+2026-05-29T11:58:18,234+0530 [70958 41] com.newrelic INFO: Using region aware event ingest URI: https://insights-collector.eu01.nr-data.net/v1/accounts/events
+2026-05-29T11:58:18,788+0530 [70958 41] com.newrelic INFO: Real user monitoring is enabled for application FakeCommerceSpringBoot. Auto instrumentation is enabled.
+2026-05-29T11:58:18,789+0530 [70958 41] com.newrelic INFO: Updating shared Adaptive Sampler sampling target to 120
+2026-05-29T11:58:18,790+0530 [70958 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T12:08:31,997+0530 [70958 16] com.newrelic.agent.core.CoreServiceImpl INFO: JVM is shutting down
+2026-05-29T12:08:39,594+0530 [71147 1] com.newrelic INFO: Writing to New Relic log file: /Users/krityankashyap/Documents/Dev-section/FakeCommerce/newrelic/logs/newrelic_agent.log
+2026-05-29T12:08:39,594+0530 [71147 1] com.newrelic INFO: JRE vendor Homebrew version 17.0.17
+2026-05-29T12:08:39,594+0530 [71147 1] com.newrelic INFO: JVM vendor Homebrew OpenJDK 64-Bit Server VM version 17.0.17+0
+2026-05-29T12:08:39,595+0530 [71147 1] com.newrelic INFO: OS Mac OS X version 26.3.1 arch aarch64
+2026-05-29T12:08:39,595+0530 [71147 1] com.newrelic INFO: Agent Host: Krityans-MacBook-Air.local IP: 127.0.0.1
+2026-05-29T12:08:39,595+0530 [71147 1] com.newrelic INFO: New Relic Agent v9.2.0 is initializing...
+2026-05-29T12:08:39,605+0530 [71147 1] com.newrelic INFO: AgentCollectionFactory: Using Caffeine 3.x for Java 17
+2026-05-29T12:08:39,954+0530 [71147 18] com.newrelic INFO: Instrumentation com.newrelic.instrumentation.jdbc-resultset is disabled. Skipping.
+2026-05-29T12:08:40,586+0530 [71147 1] com.newrelic INFO: Started Adaptive Sampler with sampling target 120 and report period 60 seconds.
+2026-05-29T12:08:40,586+0530 [71147 1] com.newrelic INFO: The full granularity root sampler was configured to use the adaptive sampler type.
+2026-05-29T12:08:40,587+0530 [71147 1] com.newrelic INFO: The full granularity remote_parent_sampled sampler was configured to use the adaptive sampler type.
+2026-05-29T12:08:40,587+0530 [71147 1] com.newrelic INFO: The full granularity remote_parent_not_sampled sampler was configured to use the adaptive sampler type.
+2026-05-29T12:08:40,588+0530 [71147 1] com.newrelic.agent.RPMServiceManagerImpl INFO: Configured to connect to New Relic at collector.eu01.nr-data.net:443
+2026-05-29T12:08:40,712+0530 [71147 1] com.newrelic INFO: Setting audit_mode to false
+2026-05-29T12:08:40,769+0530 [71147 1] com.newrelic.agent.config.ConfigServiceImpl INFO: Configuration file is /Users/krityankashyap/Documents/Dev-section/FakeCommerce/newrelic/./newrelic.yml
+2026-05-29T12:08:40,771+0530 [71147 1] com.newrelic INFO: New Relic Agent v9.2.0 has started
+2026-05-29T12:08:40,771+0530 [71147 1] com.newrelic INFO: Agent class loader: com.newrelic.bootstrap.BootstrapAgent$JVMAgentClassLoader@65ae6ba4
+2026-05-29T12:08:40,771+0530 [71147 1] com.newrelic INFO: Premain startup complete in 1,653ms
+2026-05-29T12:08:40,772+0530 [71147 1] com.newrelic INFO: New Relic Security is completely disabled by one of the user provided config `security.enabled`, `security.agent.enabled` or `high_security`. Not loading security capabilities.
+2026-05-29T12:08:42,181+0530 [71147 45] com.newrelic INFO: Server Info: Apache Tomcat/11.0.21
+2026-05-29T12:08:45,788+0530 [71147 41] com.newrelic INFO: Host name is Krityans-MacBook-Air.local, display host Krityans-MacBook-Air.local for application FakeCommerceSpringBoot
+2026-05-29T12:08:45,792+0530 [71147 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.
+2026-05-29T12:08:48,401+0530 [71147 41] com.newrelic INFO: Collector redirection to collector.eu01.nr-data.net:443
+2026-05-29T12:08:50,698+0530 [71147 41] com.newrelic INFO: Max payload size is 1,000,000 bytes
+2026-05-29T12:08:50,699+0530 [71147 41] com.newrelic INFO: Agent run id: BQaNEkqd1uq4AHvGLR-fq-JqGTTAAAIBAAAnIQEAARXrAgQfn6m6AwAFOS4yLjAAGktyaXR5YW5zLU1hY0Jvb2stQWlyLmxvY2FsABZGYWtlQ29tbWVyY2VTcHJpbmdCb290
+2026-05-29T12:08:50,699+0530 [71147 41] com.newrelic INFO: Agent 71147@Krityans-MacBook-Air.local/FakeCommerceSpringBoot connected to collector.eu01.nr-data.net:443
+2026-05-29T12:08:50,700+0530 [71147 41] com.newrelic INFO: Reporting to: https://one.eu.newrelic.com/redirect/entity/ODExMTY2MXxBUE18QVBQTElDQVRJT058NTMwNTU3Mzcw
+2026-05-29T12:08:50,701+0530 [71147 41] com.newrelic INFO: Using region aware collector host: collector.eu01.nr-data.net
+2026-05-29T12:08:50,701+0530 [71147 41] com.newrelic INFO: Using region aware metric ingest URI: https://metric-api.eu01.nr-data.net/metric/v1
+2026-05-29T12:08:50,701+0530 [71147 41] com.newrelic INFO: Using region aware event ingest URI: https://insights-collector.eu01.nr-data.net/v1/accounts/events
+2026-05-29T12:08:50,702+0530 [71147 41] com.newrelic INFO: Using region aware collector host: collector.eu01.nr-data.net
+2026-05-29T12:08:50,702+0530 [71147 41] com.newrelic INFO: Using region aware metric ingest URI: https://metric-api.eu01.nr-data.net/metric/v1
+2026-05-29T12:08:50,702+0530 [71147 41] com.newrelic INFO: Using region aware event ingest URI: https://insights-collector.eu01.nr-data.net/v1/accounts/events
+2026-05-29T12:08:51,237+0530 [71147 41] com.newrelic INFO: Real user monitoring is enabled for application FakeCommerceSpringBoot. Auto instrumentation is enabled.
+2026-05-29T12:08:51,238+0530 [71147 41] com.newrelic INFO: Updating shared Adaptive Sampler sampling target to 120
+2026-05-29T12:08:51,239+0530 [71147 41] com.newrelic INFO: New Relic JFR Monitor is disabled: JFR config has not been enabled in the Java agent.

@@ -11,7 +11,7 @@ import java.util.List;
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Long> {
 
-    List<Product> findByCategory(String category);
+    List<Product> findByCategory_Name(String categoryName);
 
     @Query(nativeQuery = true, value = "SELECT DISTINCT category FROM products")
     List<String> findAllCategories();

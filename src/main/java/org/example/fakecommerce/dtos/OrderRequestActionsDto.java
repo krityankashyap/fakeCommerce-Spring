@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class OrderRequestActionsDto {
 
-    private String productId;
+    private Long productId;
 
     private Integer quantity;
 
