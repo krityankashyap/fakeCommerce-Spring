@@ -56,8 +56,8 @@ public class OrderController {
     }
 
 
-    @PutMapping
-    public ResponseEntity<ApiResponse<GetOrderResponseDto>> updateOrder(long id, @RequestBody UpdateOrderDto updateOrderDto) {
+    @PutMapping("/{id}")
+    public ResponseEntity<ApiResponse<GetOrderResponseDto>> updateOrder(@PathVariable long id, @RequestBody UpdateOrderDto updateOrderDto) {
         return ResponseEntity.status(HttpStatus.OK).body(ApiResponse.success(this.orderService.updateOrder(id, updateOrderDto), "Order updated successfully"));
     }
 

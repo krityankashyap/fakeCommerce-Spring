@@ -16,5 +16,5 @@ public class UpdateOrderDto {
 
     private OrderStatus status;
 
-    private List<OrderRequestActionsDto> oderitems;
+    private List<OrderRequestActionsDto> orderitems;
 }

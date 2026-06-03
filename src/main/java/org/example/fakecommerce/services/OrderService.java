@@ -68,7 +68,7 @@ public class OrderService {
                 .orderStatus(OrderStatus.PENDING)
                 .build();
 
-
+        order = orderRepository.save(order);
         // search product by productId
         if (createOrderRequestDto.getOrderItems() != null) {
             for (var itemdto : createOrderRequestDto.getOrderItems()) {
@@ -92,6 +92,8 @@ public class OrderService {
 
     @Transactional
     public GetOrderResponseDto updateOrder(Long id, UpdateOrderDto updateOrderRequestDto) {
+        System.out.println(updateOrderRequestDto);
+        System.out.println(updateOrderRequestDto.getOrderitems());
         Order order = orderRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Order not found with id: " + id));
 
@@ -101,8 +103,8 @@ public class OrderService {
             orderRepository.save(order);
         }
 
-        if (updateOrderRequestDto.getOderitems() != null) {
-            List<Long> productIds = updateOrderRequestDto.getOderitems().stream().map(item -> item.getProductId()).collect(Collectors.toList());
+        if (updateOrderRequestDto.getOrderitems() != null) {
+            List<Long> productIds = updateOrderRequestDto.getOrderitems().stream().map(OrderRequestActionsDto::getProductId).collect(Collectors.toList());
 
             List<Product> products = productRepository.findAllById(productIds);
 
@@ -120,7 +122,7 @@ public class OrderService {
             Map<Long, Order_Products> existingItems = orderProductRepository.findByOrderWithProduct(order)
                     .stream().collect(Collectors.toMap(op -> op.getProduct().getId(), Function.identity()));
 
-            for (OrderRequestActionsDto itemAction : updateOrderRequestDto.getOderitems()) {
+            for (OrderRequestActionsDto itemAction : updateOrderRequestDto.getOrderitems()) {
                 Product product = productMap.get(itemAction.getProductId());
 
                 Order_Products existing = existingItems.get(product.getId());
@@ -130,6 +132,7 @@ public class OrderService {
                         if (existing != null) {
                             int addQty = (itemAction.getQuantity() != null ? itemAction.getQuantity() : 1);
                             existing.setQuantity(existing.getQuantity() + addQty);
+                            System.out.println("ADD");
                             toSave.add(existing);
                         } else {
                             Order_Products newItem = Order_Products
@@ -139,6 +142,7 @@ public class OrderService {
                                     .quantity(itemAction.getQuantity() != null ? itemAction.getQuantity() : 1)
                                     .build();
                             existingItems.put(product.getId(), newItem);
+                            System.out.println("REMOVE");
                             toSave.add(newItem);
                         }
                     }
@@ -154,6 +158,7 @@ public class OrderService {
                             throw new ResourceNotFoundException("Product not found with id: " + product.getId());
                         }
                         existing.setQuantity(existing.getQuantity() + 1);
+                        System.out.println("INCREMENT");
                         toSave.add(existing);
 
                     }
@@ -166,6 +171,7 @@ public class OrderService {
                             existingItems.remove(product.getId());
                         } else {
                             existing.setQuantity(existing.getQuantity() - 1);
+                            System.out.println("DECREMENT");
                             toSave.add(existing);
                         }
 
