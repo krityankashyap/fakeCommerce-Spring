@@ -63,8 +63,8 @@ public class OrderController {
 
 
     @GetMapping("/{id}/summary")
-    public void getOrderSummary(@PathVariable long id){
-
+    public ResponseEntity<ApiResponse<GetOrderSummaryResponseDto>> getOrderSummary(@PathVariable long id){
+         return ResponseEntity.status(HttpStatus.OK).body(ApiResponse.success(this.orderService.getOrderSummary(id), "Order summary with corresponding id:"));
     }
 
 
