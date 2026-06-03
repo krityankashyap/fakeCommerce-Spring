@@ -30,4 +30,5 @@ public class Order extends BaseClass{
 //
     @OneToMany(mappedBy = "order")
     private List<Review> reviews;
+
 }

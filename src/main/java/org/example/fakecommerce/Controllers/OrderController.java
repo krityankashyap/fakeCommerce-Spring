@@ -62,6 +62,10 @@ public class OrderController {
     }
 
 
+    @GetMapping("/{id}/summary")
+    public void getOrderSummary(@PathVariable long id){
+
+    }
 
 
 }
