@@ -5,10 +5,7 @@ import org.aspectj.weaver.ast.Or;
 import org.example.fakecommerce.Repositories.OrderProductRepository;
 import org.example.fakecommerce.Repositories.OrderRepository;
 import org.example.fakecommerce.Repositories.ProductRepository;
-import org.example.fakecommerce.dtos.CreateOrderRequestDto;
-import org.example.fakecommerce.dtos.GetOrderResponseDto;
-import org.example.fakecommerce.dtos.GetProductResponseDto;
-import org.example.fakecommerce.dtos.OrderItemRequestDto;
+import org.example.fakecommerce.dtos.*;
 import org.example.fakecommerce.exceptions.ResourceNotFoundException;
 import org.example.fakecommerce.schema.Order;
 import org.example.fakecommerce.schema.OrderStatus;
@@ -41,8 +38,8 @@ public class OrderController {
     }
 
     @PostMapping
-    public GetOrderResponseDto createOrder(@RequestBody CreateOrderRequestDto createOrderRequestDto) {
-        return null;
+    public ResponseEntity<ApiResponse<GetOrderResponseDto>> createOrder(@RequestBody CreateOrderRequestDto createOrderRequestDto) {
+        return ResponseEntity.status(HttpStatus.CREATED).body(ApiResponse.success(orderService.createOrder(createOrderRequestDto), "Order Created Successfully"));
     }
 
 
@@ -56,6 +53,12 @@ public class OrderController {
         GetOrderResponseDto order= this.orderService.getOrderById(id);
 
         return ResponseEntity.status(HttpStatus.FOUND).body(ApiResponse.success(order, "Order fectched with corresponding id"));
+    }
+
+
+    @PutMapping
+    public ResponseEntity<ApiResponse<GetOrderResponseDto>> updateOrder(long id, @RequestBody UpdateOrderDto updateOrderDto) {
+        return ResponseEntity.status(HttpStatus.OK).body(ApiResponse.success(this.orderService.updateOrder(id, updateOrderDto), "Order updated successfully"));
     }
 
 
