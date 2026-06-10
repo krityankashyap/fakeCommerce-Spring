@@ -8,6 +8,7 @@ import org.example.fakecommerce.dtos.GetProductWithDetailsResponseDto;
 import org.example.fakecommerce.exceptions.ResourceNotFoundException;
 import org.example.fakecommerce.schema.Category;
 import org.example.fakecommerce.schema.Product;
+import org.example.fakecommerce.services.cache.ProductRedisCache;
 import org.springframework.stereotype.Service;
 
 
@@ -23,6 +24,8 @@ public class ProductService {
     private final ProductRepository productRepository;
 
     private final CategoryService categoryService;
+
+    private final ProductRedisCache productRedisCache;
 
 
     public List<GetProductResponseDto> getAllProduct(){
@@ -57,7 +60,12 @@ public class ProductService {
     }
 
     public GetProductResponseDto getProductById(Long id){
-        return this.productRepository.findById(id)
+
+        Optional<GetProductResponseDto> cacheSummary= productRedisCache.getSummary(id);
+        if(cacheSummary.isPresent()){
+            return  cacheSummary.get();
+        }
+        GetProductResponseDto response= this.productRepository.findById(id)
                 .map(product -> GetProductResponseDto.builder()
                         .id(product.getId())
                         .title(product.getTitle())
@@ -67,6 +75,9 @@ public class ProductService {
                         .description(product.getDescription())
                         .build())
                 .orElseThrow(()-> new RuntimeException("Product not found"));
+
+        productRedisCache.putSummary(id, response);
+        return response;
     }
 
     public Product createProduct(CreateProductDto requestdto){

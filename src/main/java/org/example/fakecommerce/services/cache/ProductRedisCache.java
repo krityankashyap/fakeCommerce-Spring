@@ -39,7 +39,7 @@ public class ProductRedisCache {
     }
 
 
-    private void putSummary(Long id, GetProductResponseDto response){
+    public void putSummary(Long id, GetProductResponseDto response){
         try{
             stringRedisTemplate.opsForValue().set(Key_Summary + id, objectMapper.writeValueAsString(response));
         } catch (Exception e) {
